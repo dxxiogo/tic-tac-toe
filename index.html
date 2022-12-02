@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="bg-players">
+        <div id="form-players-box">
+            <form>
+                <label>Player 1:</label>
+                <input type="text" id="input-player01">
+                <p>X</p>
+                <label>Player 2:</label>
+                <input type="text" id="input-player02">
+            </form>
+        </div>
+    </div>
+    <main>
+        <header>
+            <h1>Tic-tac-toe.js</h1>
+            <div class="score-players">
+                <div class="player">
+                    <div class="player-score">
+                        <p id="player01-score">0</p>
+                    </div>
+                </div>
+                <p>X</p>
+                <div class="player">
+                    <div class="player-score">
+                        <p id="player02-score">0</p>
+                    </div>
+                </div>
+            </div>
+            <button id="restart-player">
+                resart
+            </button>
+        </header>
+        <div id="game">
+            <section class="section-player">
+                <div>
+                    <h2>Player 1</h2>
+                    <div class="score">
+                        <div class="x-icon">
+                            <p>X</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="game-area">
+                <div class="area-desej">
+                    <div class="area" id="area-1"></div>
+                    <div class="area" id="area-2"></div>
+                    <div class="area" id="area-3">.</div>
+                    <div class="area" id="area-4">.</div>
+                    <div class="area" id="area-5">.</div>
+                    <div class="area" id="area-6">.</div>
+                    <div class="area" id="area-7">.</div>
+                    <div class="area" id="area-8">.</div>
+                    <div class="area" id="area-9">.</div>
+                </div>
+            </section>
+            <section class="section-player">
+                <div>
+                    <h2>Player 2</h2>
+                    <div class="score">
+                        <div class="circle-icon"></div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+ <script src="script.js"></script>   
+</body>
+</html>
