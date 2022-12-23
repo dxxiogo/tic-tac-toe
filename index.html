@@ -11,12 +11,17 @@
     <div class="bg-players">
         <div id="form-players-box">
             <form>
-                <label>Player 1:</label>
-                <input type="text" id="input-player01">
+                <div class="player-input">
+                    <label>Player 1:</label>
+                    <input type="text" id="input-player01">
+                </div>
                 <p>X</p>
-                <label>Player 2:</label>
-                <input type="text" id="input-player02">
+                <div class="player-input">
+                    <label>Player 2:</label>
+                    <input type="text" id="input-player02">
+                </div>
             </form>
+            <div><button id="continue">Continue</button></div>
         </div>
     </div>
     <main>
@@ -42,7 +47,7 @@
         <div id="game">
             <section class="section-player">
                 <div>
-                    <h2>Player 1</h2>
+                    <h2 id="p1">Player 1</h2>
                     <div class="score">
                         <div class="x-icon">
                             <p>X</p>
@@ -54,18 +59,18 @@
                 <div class="area-desej">
                     <div class="area" id="area-1"></div>
                     <div class="area" id="area-2"></div>
-                    <div class="area" id="area-3">.</div>
-                    <div class="area" id="area-4">.</div>
-                    <div class="area" id="area-5">.</div>
-                    <div class="area" id="area-6">.</div>
-                    <div class="area" id="area-7">.</div>
-                    <div class="area" id="area-8">.</div>
-                    <div class="area" id="area-9">.</div>
+                    <div class="area" id="area-3"></div>
+                    <div class="area" id="area-4"></div>
+                    <div class="area" id="area-5"></div>
+                    <div class="area" id="area-6"></div>
+                    <div class="area" id="area-7"></div>
+                    <div class="area" id="area-8"></div>
+                    <div class="area" id="area-9"></div>
                 </div>
             </section>
             <section class="section-player">
                 <div>
-                    <h2>Player 2</h2>
+                    <h2 id="p2">Player 2</h2>
                     <div class="score">
                         <div class="circle-icon"></div>
                     </div>
@@ -73,6 +78,6 @@
             </section>
         </div>
     </main>
- <script src="script.js"></script>   
+ <script src="script.js" defer></script>   
 </body>
 </html>

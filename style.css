@@ -13,9 +13,13 @@
     --x-color:#FB8B24;
     --circle-color:#04A777;
 }
+body{
+    min-width: 100%;
+}
 main{
     background-color: #FEF9EF;
-    height: 100vh;
+    min-height: 100vh;
+    max-width: 100%;
 }
 .bg-players{
     background-color: rgba(0, 0, 0, 0.668);
@@ -27,6 +31,10 @@ main{
     justify-content: center;
 }
 #form-players-box{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
     background-color: var(--detail-color) ;
     height: 250px;
     width: 500px;
@@ -36,12 +44,42 @@ main{
 }
 form{
     display: flex;
+    justify-content: space-around;
+    height:150px;
+    width: 500px;
+}
+form p{
+    color: #FB8B24;
+    font-size: 40px;
+    margin-top: 65px;
+}
+.player-input{
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+}
+.player-input input{
+    height: 35px;
+    width: 200px;
+    padding: 10px;
+    background: none;
+    border: 2px solid var(--circle-color);
+    border-radius: 10px;
+    color: #FEF9EF;
+    margin-top: 10px;
+    outline: none;
+}
+.player-input label{
+    color: #FEF9EF;
+    font-size: 18px;
+    margin-left: 5px;
 }
 header{
     display: flex;
     align-items: center;
     justify-content: space-between;
     height: 85px;
+    max-width: 100%;
     margin-bottom: 20px;
     padding: 20px;
     background-color: var(--bg-color);
@@ -56,6 +94,8 @@ header h1{
     display: flex;
     align-items: center;
     justify-content: space-around;
+    max-width: 100%;
+    padding: 30px;
 }
 
 .game-area{
@@ -63,10 +103,11 @@ header h1{
     display: grid;
     align-content: center;
     justify-items: center;
-    height: 80vh;
+    min-height: 80vh;
 }
 .area-desej{
     display: grid;
+    max-width: 100%;
     grid-template-columns: 1fr 1fr 1fr;
     align-content: center;
     justify-items: center;
@@ -110,12 +151,12 @@ header h1{
 .section-player{
     display: flex;
     justify-content: center;
-    height: 84vh;
-    width: 350px;
+    max-height: 84vh;
+    max-width: 350px;
 }
 .section-player > div {
     height:  60vh;
-    width: 300px;
+    max-width: 300px;
     padding: 20px;
     display: flex;
     align-items: center;
@@ -156,7 +197,7 @@ header h1{
 
 }
 .score-players{
-    width: 400px;
+    max-width: 400px;
     height: 80px;
     margin-right: 130px;
     padding-right: 50px;
@@ -177,7 +218,7 @@ header h1{
     font-size: 3rem;
     color:#FEF9EF;
 }
-#restart-player{
+button{
     width: 100px;
     height: 30px;
     background-color: var(--x-color);
@@ -185,4 +226,32 @@ header h1{
     color:  #FEF9EF;
     border: none;
     cursor: pointer;
+}
+@media (max-width: 1000px){
+    .section-player{
+        display: none;
+    }
+    header h1{
+        font-size: 2rem;
+    }
+    .score-players{
+        margin-right: 20px;
+    }
+}
+@media (max-width:684px){
+    #player01-score, #player02-score{
+        font-size: 3rem;
+    }
+    .score-players{
+        padding: 5px;
+    }
+    .score-players p{
+        font-size: 2.2rem;
+    }
+}
+@media(max-width:594px){
+    .area{
+        width: 110px;
+        height: 110px;
+    }
 }
