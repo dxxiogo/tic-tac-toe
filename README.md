@@ -12,5 +12,5 @@ a entrada de dados dos jogadores, atualização de pontuações e indicasse qual
 * Javascript
 * HTML5
 
-Deploy: [Clique aqui!]()
+Deploy: [Clique aqui!](https://dxxiogo.github.io/tic-tac-toe/)
 
